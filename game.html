@@ -2,10 +2,39 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<style type="text/css">
+		body{
+			background-color: #ded;
+		}
+		.common{
+			text-align: center;
+		}
+		.common-pad-mar{
+			margin: 5px;
+			height: 60px;
+			width: 60px;
+		}
+	</style>
 	<title>NIM-GAME</title>
 </head>
 <body>
-
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-10 common">
+				<div id="row1"></div>
+				<div id="row2"></div>
+				<div id="row3"></div>
+				<div id="row4"></div>
+				<div id="youlose" style="display: none;">
+					<h1>Game Over.You Lost!</h1>
+				</div>
+				<button id="newgame" class="btn btn-primary" style="display: none;">Start New Game</button>
+			</div>
+			<div class="col-lg-2">
+				<button class="btn btn-success" id="done">DONE</button>
+			</div>
+		</div>
+	</div>
 	<script type="text/javascript" src="js/app.js"></script>
 	<script type="text/javascript" src="js/game-controller.js"></script>
 </body>
