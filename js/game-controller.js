@@ -178,10 +178,8 @@ function Game(info){
 
 }
 
-//This function will called when the document will be ready
+//This function will be called when the document will be ready
 $(function(e){
-	$('#youlose').hide();
-	$('#newgame').hide();
 	var game = new Game();
 	game.initializeGame();
 	game.showBlocksInfo();
